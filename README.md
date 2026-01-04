@@ -85,4 +85,5 @@ Bạn có thể sử dụng, chỉnh sửa và phân phối lại với điều 
 ## 👨‍💻 Tác giả
 - Chủ repo: [hzied-wk](https://github.com/hzied-wk)  
 - Môn học: INT1450 - Quản Lý Dự Án Phần Mềm, PTIT
+- Giảng viên: Nguyễn Đình Quảng
 ```

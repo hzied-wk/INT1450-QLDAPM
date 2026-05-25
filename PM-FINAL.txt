@@ -1,0 +1,40 @@
+R02: Sai lệch dữ liệu nhập liệu là risk lớn nhất
+
+- Tại Sao:
+1. Điểm số rủi ro được đánh giá rất cao trong bảng
+2. Mức độ tác động về chất lượng được đánh giá rất cao 
+3. Lý do cốt lõi: Đối với dự án Quản Lý Thư Viện thì dữ liệu là cốt lõi. Nếu phần mềm code đúng mà data bên trong sai thì toàn bộ hệ thống trở nên vô dụng, mất niềm tin -> Dẫn đến không đạt mục tiêu dự án (<2% sai sót)
+
+- Nguyên nhân:
+1. Dữ liệu gốc 
+2. Quy trình chuyển đổi
+
+R03 -> Tài chính max
+R06 -> Tiến độ, nhân sự (do dự án chỉ có 1FE 1BE)
+
+---------------------------------------------------
+
+Rủi ro tổng quát: 
+RBS - Sự thất bại trong việc Chuyển đổi số và Vận hành thực tế
+
+- Giải thích: Dự án không chỉ viết code, mà là thay đổi cách làm việc của con người từ thủ công sang máy móc
+- Được cấu thành từ (Cause):
+1. Sự chống đối hoặc thiếu kỹ năng của nhân viên thư viện R01
+2. Data không tương thích hoặc sai lệch khi đưa lên hệ thống mới R02
+3. Hạ tầng mạng/máy chủ tại thư viện không ổn định (R04)
+
+- Hậu quả: Phần mềm đúng hạn hoàn thành --> Bỏ xó và quay lại dùng giấy --> Fail
+
+----------------------------------------------------------
+
+Phương pháp đối phó để đảm bảo chất lượng
+
+- Phòng ngừa lỗi (Làm đúng từ đầu - QA)
+	+ Review tài liệu
+	+ Review Code chéo: lập trình viên kiểm tra code của nhau
+	+ Đào tạo: Đào tạo nhân sự để giảm thiểu lỗi do thiếu kỹ năng
+- Phát hiện và Sửa lỗi (Kiểm thử các tầng - QC)
+	+ Kiểm thử theo cấp độ: Unit Test -> Integration Test -> System Test -> UAT
+	+ Tập trung vào các Metrics quan trọng: Đo lường các chỉ số cụ thể
+- Kiểm soát thay đổi
+	+ Mọt thay đổi đều phải thông qua quy trình Change Request để đánh giá tác động trước khi thực hiện. Do mọi thay đổi đều ảnh hương đến chất lượng  
